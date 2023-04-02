@@ -1,5 +1,12 @@
 /** @format */
 
 export default function Home() {
-  return <div>Hello next bnb</div>;
+  return (
+    <div
+      className="text-rose-500 text-2xl
+  "
+    >
+      Hello next bnb
+    </div>
+  );
 }
