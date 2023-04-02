@@ -1,6 +1,7 @@
 /** @format */
 import { Nunito } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/navbar/Navbar";
 
 export const metadata = {
   title: "NextBNB",
@@ -16,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={font.className}>{children}</body>
+      <body className={font.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
