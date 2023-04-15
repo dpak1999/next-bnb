@@ -1,4 +1,3 @@
-/** @format */
 "use client";
 
 import { FC, ReactElement, useCallback, useEffect, useState } from "react";
