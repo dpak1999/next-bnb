@@ -48,8 +48,6 @@ const Modal: FC<ModalProps> = ({
       return;
     }
 
-    setShowModal(false);
-
     setTimeout(() => {
       onSubmit();
     }, 300);
@@ -59,8 +57,6 @@ const Modal: FC<ModalProps> = ({
     if (disabled || !secondaryAction) {
       return;
     }
-
-    setShowModal(false);
 
     secondaryAction();
   }, [disabled, secondaryAction]);
