@@ -23,7 +23,6 @@ const useFavorite = ({ listingId, currentUser }: IUseFavorite) => {
   const toggleFavorite = useCallback(
     async (e: MouseEvent<HTMLDivElement>) => {
       e.stopPropagation();
-
       if (!currentUser) {
         return loginModal.onOpen();
       }
@@ -39,7 +38,6 @@ const useFavorite = ({ listingId, currentUser }: IUseFavorite) => {
 
         await request();
         router.refresh();
-        toast.success("Success");
       } catch (error) {
         toast.error("Something went wrong");
       }
